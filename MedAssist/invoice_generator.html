@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Bill Generator</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+
+
+    <div class="navbar">
+
+      
+        
+
+  
+
+        <div class="name-of-medical-store">
+
+        
+          <h2>Amrut Medicines</h2>
+
+
+          
+        </div>
+
+        
+      <div class="button-class">
+
+        <button class="add-item" onclick="document.location='index.php'"> Add New Medicine </button>
+        <button class="add-item" onclick="document.location='edit_medicine.php'"> Search / Delete Medicine</button>
+
+      
+      </div>
+  </div>
+
+
+    
+    
+    
+    <form class="madicine-input" id="madicine-input" style="display: block;">
+
+        <div class="form-group">
+
+            <label for="name">Patient Name:</label>
+            <input type="text" id="name" name="name" placeholder="Alex">
+
+            <label for="name">Cantact: </label>
+            <input type="text" id="cantact" name="cantact" placeholder="991202311">
+
+        </div>
+
+        <br>
+        
+        <div id="med-price-row">
+
+                <div class="form-group">
+                    <div class="med-price">
+
+                        <label for="name">Madicine Name</label>
+                        <input type="text" id="name4" name="name" placeholder="Dolo 650">
+                    
+                        <label for="name">Price</label>
+                        <input type="number" id="price4" name="price" placeholder="50">
+                    </div>
+                        <button class="btn" id="btn" onclick="showmed()">Add to Invoice</button>
+                </div>
+        
+        </div>
+
+        
+
+        
+
+
+        
+
+
+        <div class="form-group">
+            <div class="med-price">
+                <label for="name">Add GST</label>
+                <input type="number" placeholder="GST" max="28" id="GST">
+                <button class="btn" id="GSTbtn" onclick="addGST()">Add GST</button>
+            </div>
+        </div>
+
+
+        
+
+    
+    </form>
+
+
+
+
+
+
+    <div class="display-invoice">
+
+        <div class="head-part">
+
+            <div class="left">
+
+                <h1>Invoice</h1>
+
+                <h4 style="margin-top: 20px;" id="pay-name">Payee name: Alex</h4>
+                <h4 id="pay-cantact">Cantact: 991202311</h4>
+
+
+
+                
+            </div>
+
+            <div class="right">
+
+                <p id="date">Date: 20-03-2023</p>
+                <p id="time">Time: 22:44</p>
+
+                <ul class="address" contenteditable="true">
+
+                    <li>Amrut Medicines</li>
+                    <li>City:   Bangalore</li>
+                    <li>zip: 560100</li>
+                    <li>Cantact:   +91 612-798-3933</li>
+
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="line"></div>
+
+        <div class="mid-part">
+
+            <table id="my-table"  style="text-align: left;">
+                <thead>
+                    <tr>
+                        <th style="width:15%">S_no</th>
+                        <th>Description</th>
+                        <th style="width:15%">Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <!-- <td>01</td>
+                        <td>Paracitamol</td>
+                        <td>20</td> -->
+                    </tr>
+                </tbody>
+            </table>
+
+
+        </div>
+
+
+        
+
+
+        <br><br>
+
+
+        <div class="head-part">
+
+            <div class="left">
+
+                <h1 id="thank">Thanks</h1>
+
+
+            </div>
+
+            <div class="right">
+
+                <h4 id="showgst">GST: 0.0%</h4>
+                <h3 id="total"> Total: 0  </h3>
+                
+
+            </div>
+
+        </div>
+
+
+
+        
+    </div>
+
+
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    <script src="script.js"></script>
+
+    
+
+
+
+</body>
+</html>

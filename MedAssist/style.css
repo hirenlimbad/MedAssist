@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background: #46657e;
+    background-image: url("https://img.freepik.com/free-vector/blue-pink-halftone-background_53876-99004.jpg");
+    background-image: url("https://c4.wallpaperflare.com/wallpaper/873/351/661/simple-background-gradient-lights-colorful-wallpaper-preview.jpg");
+
+    /* display: block; */
+
+
+	  font-family: 'Tilt Neon', cursive;
+
+    /* background: rgb(2,0,36);
+    /* background: linear-gradient(304deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 37%, rgba(0,212,255,1) 140%); */
+    /* Created with https://www.css-gradient.com */
+    
+    background-image: linear-gradient(to right, #8e2de2, #4a00e0);
+    background-repeat: no-repeat;
+
+    background-size: 100%;
+
+    
+}
+
+
+
+
+
+
+/* decorations */
+
+
+.decoration{
+  z-index: 2;
+  position: absolute;
+  margin: 0px 150px;
+  opacity: .8;
+  
+}
+
+.decoration img{
+  max-height: 50px;
+  max-width: 50px;
+}
+
+
+
+/* form code goes here */
+
+/* add item button */
+
+.add-item{                   /* add item button */
+  /* display: inline-block; */
+  height: 70px;
+  width: auto;
+  padding: 15px;
+  margin: 25px 9px; 
+  font-size: 20px;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.61);
+  border: 1px solid rgba(27, 31, 35, .15);
+  border-radius: 18px 2px;
+  box-sizing: border-box;
+  align-items: center;
+  font-family: 'Tilt Neon', cursive;
+
+}
+
+.add-item:hover{
+  background-color: rgba(162, 44, 218, 0.822);
+  color: white;
+  cursor: pointer;
+  border-radius: 2px 15px;
+  transition: .5s;
+}
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  padding: 4px;
+}
+
+.button-class{
+  align-self: flex-start;
+}
+
+.name-of-medical-store{
+  font-family: 'Dancing Script', cursive;
+  margin-top: 30px;
+  margin-left: 50px;
+  font-size: 30px;
+  color: white;
+  text-decoration: overline 1.4px;
+
+}
+
+
+
+
+
+
+
+
+.madicine-input{
+
+    display: none;
+    width: 500px;
+    height: auto;
+    background-color: #6e46be86;
+    color: white;
+    border: double 1px black;
+
+    /* Created with https://www.css-gradient.com */
+      background: rgba(184, 110, 248, 1.0);
+      background: -webkit-radial-gradient(bottom right, rgba(184, 110, 248, 0.598), rgba(44, 54, 195, 1.0));
+      background: -moz-radial-gradient(bottom right, rgba(184, 110, 248, 0.598), rgba(44, 54, 195, 1.0));
+      background: radial-gradient(to top left, rgba(184, 110, 248, 0.598), rgba(44, 54, 195, 1.0));
+
+    margin: 9% 30%;
+    padding: 29px;
+
+    border-radius: 11px 0px;
+    align-self: center;
+}
+
+
+.form-group {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    width: 150px;
+    margin-right: 10px;
+    font-weight: bold;
+  }
+  
+  .form-group input[type="text"],
+  .form-group input[type="number"] {
+    flex: 1;
+    background-color: rgba(227, 207, 245, 0.804);
+    border-radius: 7px;
+    border-color: transparent;
+  }
+  
+  .btn {
+    margin-top: 60px;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    background-color: #062c54;
+
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background-color: #007bff;
+    transition: .5s;
+    border-radius: 3px;
+  }
+  
+
+  .madicine-input input{
+    padding: 6px;
+    font-size: 17px;
+  }
+
+  .madicine-input label{
+    font-size: 19px;
+  }
+
+/* main container */
+
+.main-contaner-medicine{
+  display: flex;
+  flex-direction: row-reverse;
+  /* border: solid red 2px; */
+  justify-content: space-around;
+}
+/* product show contaner */
+
+.main-container {
+
+  margin: 2%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 1000px;
+  /* border: solid red 2px; */
+  margin-right: 0px;
+
+  margin-bottom: 20%;
+
+}
+
+.main-container .product {
+
+    display: flex;
+    max-width: 450px;
+    /* border: solid 2px black; */
+    border-radius: 9px;
+    /* margin: 2% 1%;  */
+    min-width: 350px;
+    background-color: #1e2d3c9f;
+    color: white;
+
+    padding: 19px;
+    margin: 10px;
+  /* transform: rotate(-12deg); */
+
+  }
+
+.main-container .product:hover{
+    background-color: rgba(173, 213, 220, 0.537);
+    transition: .5s;
+    color:black;
+    border-radius: 3px;
+
+
+}
+  
+.main-container  .product img {
+    width: 90px;
+    height: 90px;
+    margin: 8px 10px 0 2px;
+  } 
+  
+.main-container  .product-info {
+    flex: 1;
+    margin-left: 7px;
+  }
+  
+.main-container  .product-info h2 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+ .main-container .product-info p {
+    margin: 0;
+    font-size: 16px;
+    text-transform: capitalize;
+  }
+  
+
+#image-input1{
+  margin-top: 60px;
+}
+
+#image-input {
+  margin-left: 10px;
+}
+
+
+
+/* search box */
+
+.search-box-class{
+  max-height: 500px;
+  overflow: scroll;
+  text-transform: capitalize;
+}
+
+
+.search-box-class .search-box {
+  display: flex;
+  margin: 20px;
+  /* border: solid red 2px; */
+  width: 290px;
+  justify-content: space-evenly ;
+}
+
+.search-box-class input[type="text"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+  height: 30px;
+  width: auto;
+}
+
+.search-box-class button[type="submit"] {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #71c7eacc;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: 10px;
+
+
+  height: 50px;
+  width: 50px;
+
+}
+
+button[type="submit"]:hover {
+  background-color: rgb(14, 159, 221);
+}
+
+
+
+
+
+.search-box-class{
+
+  /* border: solid red 2px; */
+
+  background-color: #1e2d3cd7;
+  border-radius: 9px;
+  margin-top: 29px;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+
+.search-box-class ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px;
+}
+
+.search-box-class li {
+
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: rgba(223, 203, 253, 0.936);
+  color: black;
+
+
+  margin: 10px 10px;
+  padding: 9px;
+
+  border-radius: 4px;
+  /* cursor: pointer; */
+
+  text-transform: capitalize;
+
+
+}
+
+.search-box-class li:hover{
+  background-color: white;
+  color: black;
+}
+
+
+
+.search-box-class input[type="text"]:hover{
+  padding: 14px;
+  transition: 0.2s;
+}
+/* just checking for git repo */
